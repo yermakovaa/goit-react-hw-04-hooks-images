@@ -1,6 +1,6 @@
 {
-  "name": "name_project",
-  "homepage": "https://yermakovaa.github.io/name_project",
+  "name": "goit-react-hw-04-hooks-images",
+  "homepage": "https://yermakovaa.github.io/goit-react-hw-04-hooks-images",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -40,9 +40,12 @@
     ]
   },
   "devDependencies": {
+    "axios": "^0.21.0",
     "husky": "^4.3.6",
     "lint-staged": "^10.5.3",
     "prettier": "^2.2.1",
-    "prop-types": "^15.7.2"
+    "prop-types": "^15.7.2",
+    "react-loader-spinner": "^3.1.14",
+    "react-toastify": "^6.2.0"
   }
 }
