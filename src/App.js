@@ -75,13 +75,15 @@ function App() {
 
       {error && <ErrorView texterror={error} />}
 
-      {images.length > 0 && (
+      {images.length > 0 && !error && (
         <ImageGallery images={images} onOpenModal={onOpenModal} />
       )}
 
       {isLoading && <LoaderComponent />}
 
-      {!isLoading && images.length > 0 && <Button onLoadMore={onLoadMore} />}
+      {!isLoading && images.length >= 12 && !error && (
+        <Button onLoadMore={onLoadMore} />
+      )}
 
       {showModal && (
         <Modal onToggleModal={toggleModal} largeImageURL={largeImageURL} />
